@@ -1,0 +1,23 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: devfile-sample-utsv
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: devfile-sample-utsv
+    app.kubernetes.io/part-of: tkwch-fix-0075-0030-app
+  name: devfile-sample-utsviuxs
+spec:
+  path: /
+  port:
+    targetPort: 3001
+  tls:
+    insecureEdgeTerminationPolicy: Redirect
+    termination: edge
+  to:
+    kind: Service
+    name: devfile-sample-utsv
+    weight: null
+status: {}
