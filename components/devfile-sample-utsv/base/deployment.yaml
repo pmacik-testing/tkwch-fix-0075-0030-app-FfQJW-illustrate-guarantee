@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: devfile-sample-utsv
     spec:
       containers:
-      - image: nodejs-image:latest
+      - image: quay.io/pmacik-testing/tkwch-fix-0075-0030-tenant/tkwch-fix-0075-0030-app/devfile-sample-utsv@sha256:edcdefd9966462b84cd7576900066ae42e05ed5c57362e5c967919275cdc60cf
         name: my-nodejs
         ports:
         - containerPort: 3001
